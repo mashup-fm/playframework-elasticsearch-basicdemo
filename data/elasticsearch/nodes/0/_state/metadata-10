@@ -1,0 +1,33 @@
+{
+  "state" : {
+    "version" : 10,
+    "meta-data" : {
+      "templates" : {
+      },
+      "indices" : {
+        "models_sample" : {
+          "state" : "open",
+          "settings" : {
+            "index.number_of_shards" : "5",
+            "index.number_of_replicas" : "1"
+          },
+          "mappings" : [ {
+            "models_sample" : {
+              "properties" : {
+                "id" : {
+                  "type" : "long"
+                },
+                "field2" : {
+                  "type" : "string"
+                },
+                "field1" : {
+                  "type" : "string"
+                }
+              }
+            }
+          } ]
+        }
+      }
+    }
+  }
+}
